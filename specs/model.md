@@ -3,7 +3,7 @@
        * lastResult:
            * type: Number
            * initialized: 0
-    * methods (2):
+    * methods (3):
        * get:
            * args(): none
            * return: number
