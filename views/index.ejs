@@ -13,7 +13,8 @@
                 <input name="number" type="number" value=1>
                 <button type="submit">Convert Currency</button>
             </form>
-            <div class="result"><%= result %> </div>
+            <div class="result"><%= currency + " " + result %> </div>
+                <a href="/clear"><button type="button" class="clear-button">Clear Form</button></a>
         </div>
 
 <% include partials/footer %>
