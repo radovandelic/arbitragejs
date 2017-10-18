@@ -1,6 +1,6 @@
 var converter = {
     exchangeRates: {
-        //EUR will be our default/intermediary currency when dealing wtih multiple currencies
+        //EUR will be our default/intermediary currency when dealing with multiple currencies
         EUR: 1,
         USD: 1.18
     },
