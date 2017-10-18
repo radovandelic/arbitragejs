@@ -18,7 +18,6 @@
             * return: currency exchange rate
             * behavior: updates the currency exchange rate
 
-
 ///
     var converter = {
         USD: 1.18,
