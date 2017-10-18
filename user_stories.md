@@ -1,4 +1,2 @@
 user stories:
-* 1
-* 2
-* 3
+* a user can convert from EUR to USD and vice versa
