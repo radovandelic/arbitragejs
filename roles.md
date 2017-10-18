@@ -3,6 +3,6 @@
 | ------ | ------ | -------
 | Cahit | views and css | 
 | Sanni | routes |
-| Radovan | logic and model |
+| Radovan | logic, model, bugfixing |
 | Kesse | app.js |
 | Sara | logic.updateCurrencyRate() |
