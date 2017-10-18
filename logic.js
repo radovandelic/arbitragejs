@@ -10,4 +10,3 @@ var converter = {
 }
 
 module.exports = converter;
-console.log(converter.convert(100, true));
