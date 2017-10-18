@@ -124,3 +124,15 @@ input:checked + .slider:before {
 input + .slider:before {
     content: "$";
 }
+
+
+button.clear-button {
+    border: none;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 5px;
+    background: #ff4700;
+    color: white;
+}
