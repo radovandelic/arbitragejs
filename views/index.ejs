@@ -6,7 +6,11 @@
                 <label for="number">Value in 
                     <!-- Rectangular switch -->
                 <label class="switch">
-                    <input name="direction" type="checkbox">
+                    <input name="direction" type="checkbox"
+                        <% if (currency && currency == "$") { %>
+                            <%= `checked="checked"` %>
+                        <% } %> 
+                    >
                     <span class="slider"></span>
                 </label>
                 </label>
