@@ -17,11 +17,13 @@
             * return: converted number
             * behavior: converts currency (exchange rate currently hardcoded in logic.currencies)
         * updateExchangeRate:
-            * args(1):
+            * args(2):
                 * currency:
                     * type: string
-            * return: currency exchange rate from default (EUR) to requested currency
-            * behavior: updates the currency exchange rate(s)
+                * callback:
+                    * type: function
+            * return: undefined
+            * behavior: updates the currency exchange rate(s) from default (EUR) to requested currency
 
 * requires: none
 * exports: converter

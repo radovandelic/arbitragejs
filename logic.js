@@ -9,7 +9,7 @@ var converter = {
         result = +result.toFixed(2) //rounds result to 2 decimals
         return result;
     },
-    updateExchangeRate: function (currency) {
+    updateExchangeRate: function (currency, callback) {
         // Sara's code goes >here<
     }
 }
