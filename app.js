@@ -33,7 +33,6 @@ app.post("/convert", function (req, res) {
     var currency = direction ? "$" : "€";
     res.render("index.ejs", { result: result, currency: currency });
     res.render("index.ejs", { result: result });
-    //res.send(req.body.number + ", direction: " + JSON.stringify(req.body.direction));
 });
 
 app.get("/convert", function (req, res) {

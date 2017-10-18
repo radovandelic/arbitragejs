@@ -1,0 +1,25 @@
+{
+  "name": "currency_converter",
+  "version": "0.0.2",
+  "description": "A currency converter that converts currencies",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radovandelic/arbitragejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radovandelic/arbitragejs/issues"
+  },
+  "homepage": "https://github.com/radovandelic/arbitragejs#readme"
+}
