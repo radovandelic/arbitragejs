@@ -7,7 +7,7 @@
                     <!-- Rectangular switch -->
                 <label class="switch">
                     <input name="direction" type="checkbox"
-                        <% if (currency == '€') { %>
+                        <% if (currency && currency == "$") { %>
                             <%= `checked="checked"` %>
                         <% } %> 
                     >

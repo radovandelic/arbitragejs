@@ -32,7 +32,6 @@ app.post("/convert", function (req, res) {
     var result = logic.convert(number, direction);
     var currency = direction ? "$" : "€";
     res.render("index.ejs", { result: result, currency: currency });
-    res.render("index.ejs", { result: result });
 });
 
 app.get("/convert", function (req, res) {
