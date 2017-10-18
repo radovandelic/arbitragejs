@@ -39,6 +39,10 @@ app.get("/convert", function (req, res) {
     res.render("index.ejs", { initialValue: 1, result: result, currency: "" });
 });
 
+app.use("", function (req, res) {
+    res.status(404).send("404: Page not found");    
+});
+
 app.listen(port, function (req, res) {
     console.log("Server started!, listening on port " + port);
 });

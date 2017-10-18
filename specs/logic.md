@@ -6,6 +6,7 @@
             * props(2):
                 * EUR: number, initialized to 1
                 * USD: number, initialized to 1.18
+
     * methods(2):
         * convert:
             * args(2):
@@ -15,13 +16,15 @@
                     * behavior: true for EUR to USD, false for USD to EUR
             * return: converted number
             * behavior: converts currency (exchange rate currently hardcoded in logic.currencies)
-
         * updateExchangeRate:
             * args(1):
                 * currency:
                     * type: string
             * return: currency exchange rate from default (EUR) to requested currency
             * behavior: updates the currency exchange rate(s)
+
+* requires: none
+* exports: converter
 
     /*
     var converter = {
@@ -30,3 +33,4 @@
         updateExchangeRate: function (currency) {}
     }
     */
+

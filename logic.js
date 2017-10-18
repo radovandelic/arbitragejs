@@ -6,6 +6,7 @@ var converter = {
     },
     convert: function (number, convertDirection=true) {
         var result = convertDirection ? (number * this.exchangeRates["USD"]) : (number / this.exchangeRates["USD"]);
+        result = +result.toFixed(2) //rounds result to 2 decimals
         return result;
     },
     updateExchangeRate: function (currency) {
