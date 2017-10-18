@@ -8,13 +8,13 @@
                 <label class="switch">
                     <input name="direction" type="checkbox"
                         <% if (currency && currency == "$") { %>
-                            <%= `checked="checked"` %>
+                            <%= `checked` %>
                         <% } %> 
                     >
                     <span class="slider"></span>
                 </label>
                 </label>
-                <input name="number" type="number" value=1>
+                <input name="number" type="number" placeholder="1" step="0.01" value=<%= initialValue %>>
                 <button type="submit">Convert Currency</button>
             </form>
             <div class="result"><%= currency + " " + result %> </div>

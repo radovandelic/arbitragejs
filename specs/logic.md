@@ -1,26 +1,32 @@
 * converter:
     * props(1):
-        * USD: number
-        * purpose: defines the EUR to USD exchange rate 
+        * exchangeRates:
+            * type: object:
+            * purpose: defines the exchange rates (EUR will be the default/intermediary currency)
+            * props(2):
+                * EUR: number, initialized to 1
+                * USD: number, initialized to 1.18
     * methods(2):
         * convert:
             * args(2):
                 * number: number
                 * convertDirection: 
-                    * type: bool
+                    * type: boolean
                     * behavior: true for EUR to USD, false for USD to EUR
             * return: converted number
-            * behavior: converts currency (conversion rate hardcoded in logic)
+            * behavior: converts currency (exchange rate currently hardcoded in logic.currencies)
 
-        * updateCurrencyRate:
+        * updateExchangeRate:
             * args(1):
-                * currency
-            * return: currency exchange rate
-            * behavior: updates the currency exchange rate
+                * currency:
+                    * type: string
+            * return: currency exchange rate from default (EUR) to requested currency
+            * behavior: updates the currency exchange rate(s)
 
-///
+    /*
     var converter = {
-        USD: 1.18,
-        convert: function() {},
-        updateCurrencyRate: function(currency){}
+        exchangeRates: { EUR: 1, USD: 1.18 },
+        convert: function (number, convertDirection) { },
+        updateExchangeRate: function (currency) {}
     }
+    */
