@@ -11,8 +11,8 @@ app.set("view engine", "ejs");
 
 var model = require("./model");
 var logic = require("./logic");
-//var routes = require("./routes");
-//app.use("/", routes);
+var routes = require("./routes");
+app.use("/", routes);
 
 app.get("/", function (req, res) {
     var result = model.get();

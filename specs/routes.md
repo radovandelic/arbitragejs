@@ -1,9 +1,9 @@
 * behavior:
     * /clear: rerenders an empty index.ejs, sets model to 0
     * /convert:
-        * routes.post:
+        * router.post:
             * args(2):
-                * req.body.num
+                * req.body.number
                 * req.body.direction
             * return: undefined
             * behavior: renders index.ejs with conversion result
