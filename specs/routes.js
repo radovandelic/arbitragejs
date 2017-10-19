@@ -8,11 +8,7 @@
             * return: undefined
             * behavior: renders index.ejs with conversion result
 
-    * /:
-        * args(): none
-        * return: undefined
-        * behavior: renders index.ejs with textbox default val of 1
-
+  
 * requires:
     * ./logic
     * ./model
@@ -22,3 +18,11 @@
 
 
     
+
+var modelName = require("./models/modelSchema.js");
+
+
+app.get("/", function(req, res){
+    console.log("you've been routed to the homepage");
+    res.render("index.ejs", { textbox: 1 }) // establed an obj to be viewed on the index, AND that data(key) on the index.ejs page's to be set w properties in db(above)
+});
