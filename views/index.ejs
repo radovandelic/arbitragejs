@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+        <div class="calculator">
+            <form method="post" action="/convert" class="calc-form">
+                <h1>Enter the amount</h1>
+                <label for="number">Value in 
+                    <!-- Rectangular switch -->
+                <label class="switch">
+                    <input name="direction" type="checkbox"
+                        <% if (currency && currency == "$") { %>
+                            <%= `checked` %>
+                        <% } %> 
+                    >
+                    <span class="slider"></span>
+                </label>
+                </label>
+                <input name="number" type="number" placeholder="1" step="0.01" value=<%= initialValue %>>
+                <button type="submit">Convert Currency</button>
+            </form>
+            <div class="result"><%= currency + " " + result %> </div>
+                <a href="/clear"><button type="button" class="clear-button">Clear Form</button></a>
+        </div>
+
+<% include partials/footer %>
