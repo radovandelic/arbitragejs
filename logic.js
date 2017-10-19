@@ -9,8 +9,14 @@ var converter = {
         result = +result.toFixed(2) //rounds result to 2 decimals
         return result;
     },
-    updateExchangeRate: function (currency, callback) {
+    updateExchangeRate: function (currency, valueCurrency, callback) {
         // Sara's code goes >here<
+        if(currency === EUR){
+            exchangeRates.EUR = valueCurrency;
+        } else {
+            exchangeRates.USD = valueCurrency;
+        }
+        callback(currency, valueCurrency);
     }
 }
 
