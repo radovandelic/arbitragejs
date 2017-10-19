@@ -6,20 +6,20 @@ router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
 
 var logic = require("./logic");
-var model= require("./model");
+var model = require("./model");
 
 
-router.get("/clear", function(req, res){
+router.get("/clear", function (req, res) {
     model.set(0);
     res.render("index.ejs", {
         initialValue: 1,
         result: 0,
         currency: ""
-     }) // establed an obj to be viewed on the index, AND that data(key) on the index.ejs page's to be set w properties in db(above)
+    }) // establed an obj to be viewed on the index, AND that data(key) on the index.ejs page's to be set w properties in db(above)
 });
 
-router.get("/convert", function(req, res){
-       res.render("index.ejs", { 
+router.get("/convert", function (req, res) {
+    res.render("index.ejs", {
         initialValue: 1,
         result: 0,
         currency: ""
@@ -35,14 +35,17 @@ router.post("/convert", function (req, res) {
     res.render("index.ejs", { initialValue: number, result: result, currency: currency });
 });
 
-router.get("/", function(req, res){
-    res.render("index.ejs", { 
+router.get("/", function (req, res) {
+    res.render("index.ejs", {
         initialValue: 1,
         result: 0,
         currency: ""
-    })
-     }) // establed an obj to be viewed on the index, AND that data(key) on the index.ejs page's to be set w properties in db(above)
+    });
+}); // establed an obj to be viewed on the index, AND that data(key) on the index.ejs page's to be set w properties in db(above)
 
+router.use("", function (req, res) {
+    res.status(404).send("404: Page not found");
+});
 
 
 module.exports = router;
